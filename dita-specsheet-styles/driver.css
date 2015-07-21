@@ -1,0 +1,57 @@
+/*
+ * driver.css
+ *
+ * Copyright (c) 2004 David Holroyd, and contributors
+ * Copyright (c) 2005 Michael Thiele, and contributors
+ * See the file 'COPYING' for terms of use
+ *
+ * Part of wysiwygDocBook 1.01, a developed DocBook CSS stylesheet based on version 0.4 from
+ *   http://www.badgers-in-foil.co.uk/projects/docbook-css/
+ *
+ * This is the 'driver' file of the stylesheet.  It imports all the major
+ * stylesheet components.  If you want to make use of this stylesheet in your
+ * XML document (e.g. for display in a web browser), include a line like this
+ * at the top of the XML file (replacing <ver> with the version number):
+ *
+ *   <?xml-stylesheet href="wysiwygdocbook1.0/driver.css" type="text/css"?>
+ *
+ * If you want to customise the stylesheet, a customisation layer can be
+ * created by simply witing a new CSS file, and including a declaration to
+ * import this file at the top. The customisation layer can then override any
+ * of the existing stylesheet rules, or create new ones.
+ */
+
+/*@import "bookmap.css";*/
+/*@import "bookmap_ext.css";*/
+@import "cals_table.css";
+@import "concept.css";
+/*@import "conrefs.css";*/
+/*@import "dita_coloured_revisions.css";*/
+/*@import "dita_syntax_highlight.css";*/
+@import "dita.css";
+/*@import "folds.css";*/
+@import "hi-d.css";
+/*@import "hide_colspec.css";*/
+/*@import "high-contrast.css";*/
+@import "html_cals_table.css";
+@import "learning.css";
+@import "links.css";
+/*@import "map_edit.css";*/
+/*@import "map_ext.css";*/
+/*@import "map_print_resolved_topics.css";*/
+/*@import "map_show_link_text.css";*/
+@import "map.css";
+@import "mapgroup-d.css";
+@import "pr-d.css";
+/*@import "preview.css";*/
+@import "reference.css";
+@import "show_colspec.css";
+/*@import "subjectscheme_edit.css";*/
+@import "sw-d.css";
+@import "table.css";
+@import "task.css";
+@import "topic.css";
+@import "ui-d.css";
+@import "ut-d.css";
+@import "xnal_ext.css";
+@import "xnal.css";

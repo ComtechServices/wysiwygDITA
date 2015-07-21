@@ -1,0 +1,32 @@
+@import "map_edit.css";
+
+*[class ~= "subjectScheme/subjectScheme"] *{
+    content:"" !important;
+}
+
+*[class ~= "subjectScheme/hasInstance"] *[class ~= "subjectScheme/subjectdef"]{
+    font-size:14px;
+    padding-top:5px;
+}
+
+
+
+*[class ~= "subjectScheme/enumerationdef"] *[class ~= "subjectScheme/attributedef"]:before{
+    display: none !important;
+}
+
+*[class ~= "subjectScheme/enumerationdef"] *[class ~= "subjectScheme/attributedef"]{
+    font-size:14px;
+    display: block;
+    padding-top: 0px !important;
+}
+
+*[class ~= "subjectScheme/enumerationdef"] *[class ~= "subjectScheme/subjectdef"]:before{
+    display: none !important;
+}
+
+*[class ~= "subjectScheme/enumerationdef"] *[class ~= "subjectScheme/subjectdef"]{
+    font-size:14px;
+    display:inline;
+    padding-top: 0px;
+}

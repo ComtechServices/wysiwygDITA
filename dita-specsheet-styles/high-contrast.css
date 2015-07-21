@@ -1,0 +1,303 @@
+
+	
+table,
+    simpletable,
+table[border],
+    simpletable[border],
+stentry{
+        border-color:#CCCCCC !important;
+    }
+
+tgroup{
+        border-color:white !important;
+    }
+
+tgroup:before! > colspec{
+color:#59ACFF !important;
+    }
+
+table[frame = 'above'] > tgroup,
+table[frame = 'top'] > tgroup{
+        border-top-color:white;
+    }
+
+table[frame = 'below'] > tgroup,
+table[frame = 'bottom'] > tgroup{
+        border-bottom-color:white;
+    }
+
+table[frame = 'rhs'] > tgroup,
+    simpletable[frame = 'rhs'] > tgroup{
+        border-right-color:white;
+    }
+
+table[frame = 'lhs'] > tgroup,
+    simpletable[frame = 'lhs'] > tgroup{
+        border-left-color:white;
+    }
+
+table[frame = 'vsides'] > tgroup,
+table[frame = 'sides'] > tgroup{
+        border-left-color:white;
+        border-right-color:white;
+    }
+
+table[frame = 'hsides'] > tgroup,
+table[frame = 'topbot'] > tgroup{
+        border-top-color:white;
+        border-bottom-color:white;
+    }
+
+table[frame = 'box'] > tgroup,
+table[frame = 'border'] > tgroup,
+table[frame = 'all'] > tgroup{
+        border-color:white !important;
+    }
+
+concept > title{
+        color:#009999  !important;
+    }
+
+    *[frame]{
+        border-color:white;
+    }
+
+table > caption,
+table > info > title,
+table > title,
+choice:before{
+        color:#0050F0 !important;
+    }
+
+table,
+    simpletable,
+relcell,
+relcolspec{
+        border-color:#383838 !important;
+    }
+
+table[frame],
+    simpletable[frame]{
+        border-color:white !important;
+    }
+
+thead,
+relheader,
+sthead > stentry{
+    	color: white !important;
+        background-color:#383838 !important;
+    }
+
+topicmeta{
+        color: #8A0087 !important;
+    }
+
+    syntaxdiagram:before,
+    synblk:before,
+    groupseq:before,
+    groupchoice:before,
+    groupcomp:before,
+    fragment:before,
+    synnote:before,
+    fragref:before,
+    synnoteref:before,
+prereq:before,
+postreq:before,
+context:before,
+result:before,
+info:before,
+tutorialinfo:before,
+stepxmp:before,
+stepresult:before,
+searchtitle:before,
+navtitle:before,
+shortdesc:before,
+example:before,
+fn:before,
+fn[callout]:before,
+related-links:before,
+links:before,
+linklist:before,
+linkpool:before,
+linkinfo:before,
+keywords indexterm,
+    codeblock,
+indexterm > index-see:before,
+indexterm > index-see-also:before{
+        color:#808080 !important;
+    }
+
+    fragref,
+    sep,
+link:before,
+xref:before
+    {
+        color:#59ACFF !important;
+    }
+
+    kwd{
+        color:#B31552 !important;
+    }
+
+    oper{
+        color:#179C32 !important;
+    }
+
+    delim,
+dlhead{
+        color:#960000 !important;
+    }
+
+refsyn,
+    msgnum,
+    msgph,
+    msgblock,
+    userinput{
+        color:#009999 !important;
+    }
+
+    shape:before,
+    coords:before{
+        color:#CCCCCC !important;
+    }
+
+
+    authorinformation:before,
+    personinfo:before,
+    organizationinfo:before,
+    namedetails:before,
+    personname:before,
+    organizationnamedetails:before,
+    addressdetails:before,
+    contactnumbers:before,
+    emailaddresses:before,
+    urls:before,
+q:before,
+q:after,
+lq:before,
+lq:after,
+desc:before,
+desc:after,
+source[href]:after,
+tm:after{
+        color:#CCCCCC !important;
+    }
+
+pre{
+        color:#179C32 !important;
+    }
+
+draft-comment{
+    	color: #009999 !important;
+    	border: none !important;
+    }
+
+boolean:before,
+state:before{
+        color:#B31552 !important;
+    }
+
+required-cleanup{
+    	color: #960000 !important;
+        border:none !important;
+    }
+
+resourceid:before,
+series:before,
+source:before,
+permissions:before,
+prognum:before,
+publisher:before,
+othermeta:before,
+platform:before,
+featnum:before,
+keywords:before,
+critdates:before,
+created:before,
+revised:before,
+copyryear:before,
+copyrholder:before,
+copyright:before,
+component:before,
+vrm:before,
+prodname:before,
+audience:before,
+brand:before,
+category:before,
+prodinfo:before,
+metadata:before,
+author:before{
+        color:#CCCCCC !important;
+    }
+
+keywords indexterm > indexterm{
+        color:#009999 !important;
+    }
+
+table[border][rules = cols] > tr > td,
+table[border][rules = cols] > tr > th,
+table[border][rules = cols] > tbody > tr > td,
+table[border][rules = cols] > tbody > tr > th,
+table[border][rules = cols] > thead > tr > td,
+table[border][rules = cols] > thead > tr > th,
+table[border][rules = cols] > tfoot > tr > td,
+table[border][rules = cols] > tfoot > tr > th{
+        border-left-color:white;
+        border-right-color:white;
+    }
+
+table[border][rules = rows] > tr > td,
+table[border][rules = rows] > tr > th,
+table[border][rules = rows] > tbody > tr > td,
+table[border][rules = rows] > tbody > tr > th,
+table[border][rules = rows] > thead > tr > td,
+table[border][rules = rows] > thead > tr > th,
+table[border][rules = rows] > tfoot > tr > td,
+table[border][rules = rows] > tfoot > tr > th{
+        border-top-color:white;
+        border-bottom-color:white;
+    }
+
+table[border][rules = all] > tr > td,
+table[border][rules = all] > tr > th,
+table[border][rules = all] > tbody > tr > td,
+table[border][rules = all] > tbody > tr > th,
+table[border][rules = all] > thead > tr > td,
+table[border][rules = all] > thead > tr > th,
+table[border][rules = all] > tfoot > tr > td,
+table[border][rules = all] > tfoot > tr > th{
+        border-color:white;
+    }
+
+table[border][rules = none] > tr > td,
+table[border][rules = none] > tr > th,
+table[border][rules = none] > tbody > tr > td,
+table[border][rules = none] > tbody > tr > th,
+table[border][rules = none] > thead > tr > td,
+table[border][rules = none] > thead > tr > th,
+table[border][rules = none] > tfoot > tr > td,
+table[border][rules = none] > tfoot > tr > th{
+        border-color:#383838;
+    }
+
+topicgroup{
+        border-color:#960000 !important;
+    }
+
+reference > title,
+refbody > section > title,
+topic > title,
+    * topic > title{
+        border-bottom-color:#59ACFF;
+    }
+    
+bookmeta{
+        border-color:white !important;
+    }
+    
+proptypehd,
+propvaluehd,
+propdeschd,
+prolog{
+        color:#B512B2 !important;
+    }

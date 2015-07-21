@@ -1,0 +1,186 @@
+/*
+====================================
+    Map elements. [map]
+====================================
+*/
+
+/*@import "map_ext.css";*/
+
+@media screen and (min-width:1200px){
+                    topicgroup  {
+                    font-family:arial;
+                    padding-top:20px;
+                    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+                    -moz-column-count: 2; /* Firefox */
+                    column-count: 2;
+                    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+                    -moz-column-gap: 20px; /* Firefox */
+                    column-gap: 20px;
+                    height: auto;
+                    min-height: 100%;
+                    margin:0 auto;
+                    position:relative;
+                    
+                    }}
+                    
+map {
+    	font-family:arial;
+	padding-top:40px;
+              height: auto;
+              min-height: 100%;
+              margin:0 auto;
+              position:relative;
+}
+
+anchor,
+navref,
+topicref{
+    display:block;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+topicgroup > topicmeta > navtitle {
+	font-size:1em;
+	font-weight:bold;
+	text-align:left;
+	color: #006db8;
+	text-transform: uppercase;
+}
+
+/*
+    The <topicmeta> element defines the metadata 
+    that applies to a topic when it appears in a 
+    map, and to the other topics in the map that 
+    are contained by the same element that contains 
+    the <topicmeta> element.
+*/
+topicmeta > foreign > legalnotice > para {
+    width:50%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:-150px;
+    font-size:0.5em; 
+    color: black;
+    text-align: right;
+}
+
+topicmeta > foreign > org {
+    width:50%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:-150px;
+    font-size:0.5em;
+    color: black;
+}
+
+orgname {
+    font-weight:bold;
+    color: black;
+}
+
+address {
+    color: black;
+    display:block;
+}
+
+org > uri{
+    display:block;
+}
+
+org > phone{
+    display:block;
+}
+
+org > fax{
+    display:block;
+}
+
+/* render link-like elements per HTML's normal styling */
+link, ulink, uri, email, xref {
+	/* When ulink contains no body text, the url should be rendered
+	 * at this point in the document.  Can't see how to do this with CSS */
+	color:#0000ff;
+	text-decoration:underline;
+}
+/* ulink:after {
+	content: " <" attr(url) ">";
+} */
+
+link:before, xref:before {
+	content: "\2192";
+}
+
+xref:after {
+    content: attr(xreflabel);
+}
+
+topicgroup[outputclass="footer"] topicmeta foreign bookmeta{
+    display: block;
+    background-color:white;
+    color: black;
+}
+
+/*
+  The generic title.
+ */
+map > title{
+             font-size:2em;
+	font-weight:bold;
+	text-align:left;
+	color: black;
+}
+
+ph[outputclass=subtitle] {
+             display:block;
+    	font-size:0.75em;
+	font-weight:bold;
+	text-align:left;
+	color: black;
+	text-transform: uppercase;
+}
+
+/*
+    Relation tables.
+*/
+reltable{
+    display:table;
+    border-spacing:1pt;
+    margin-left:0.5em;
+}
+
+relrow{
+    display:table-row;
+}
+
+relheader{
+    display:table-row;
+    background-color: #EEEEFF;
+    color:inherit;
+}
+
+relcell,
+relcolspec{
+    display:table-cell;
+    border:1px solid silver;   
+    padding:5px;
+}
+
+relcell > topicgroup,
+relcell > topichead,
+relcell > topicref{
+    margin-left: 0;
+}
+
+relcolspec[type]:before{
+    font-weight:bold;
+    content:"type=" attr(type);
+}
+
+reltable > topicmeta{
+    display:table-caption;    
+}

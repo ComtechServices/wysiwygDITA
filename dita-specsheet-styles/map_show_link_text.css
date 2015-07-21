@@ -1,0 +1,24 @@
+@import "dita.css";
+
+/* For hrefs try and show the tile of the referred topic. */
+topicref[href]:before
+{
+    display:inline;
+    color:#222222;
+    background-color:inherit;
+}
+
+topicref:before,
+topicref[keyref]:before
+{
+    display:inline;
+    color:#222222;
+    background-color:inherit;
+}
+
+/*The above selector (topicref:before) matches on keydefs too so it will change the icon keydef.png*/
+keydef:before{
+    display:inline;
+    color:#222222;
+    background-color:inherit;    
+}

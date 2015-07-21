@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ds5_424_ts">
+ <title>Caveats</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>Due to browser security designs to prevent malicious code from running on a local machine, you
+   cannot “<menucascade>
+    <uicontrol>Open…</uicontrol><uicontrol>File…</uicontrol>
+   </menucascade>” directly from your desktop. Rather, the content must be hosted on a web server.
+   For the purposes of my demos today, I’m actually running the built-in Apache server for Mac. The
+   other caveat is that the xml documents MUST include the proper XML processing instruction to
+   reference the stylesheets. Also, due to the direct nature of this approach, complex processing
+   cannot be carried out (or at least I have not invested enough time to get this working yet), so
+   nested maps do not work, nor can you perform complex conref or keyref resolution.</p>
+ </conbody>
+</concept>

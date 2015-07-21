@@ -1,0 +1,14 @@
+/* extensible Name and Address Language */
+
+authorinformation:before,
+personinfo:before,
+organizationinfo:before,
+namedetails:before,
+personname:before,
+organizationnamedetails:before,
+addressdetails:before,
+contactnumbers:before,
+emailaddresses:before,
+urls:before {
+    display:inline;
+}

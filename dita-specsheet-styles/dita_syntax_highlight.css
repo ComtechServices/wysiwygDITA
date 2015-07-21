@@ -1,0 +1,6 @@
+@import "dita.css";
+
+*[class~="pr-d/codeblock"]{
+	background-color: #ffffff;
+	border: 0px solid; 
+}

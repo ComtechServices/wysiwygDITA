@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_awb_bf4_ts">
+ <title>Usage</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>Include the following xml-stylesheet reference in your ditamap: <userinput>&lt;?xml-stylesheet
+    href="dita-specsheet-styles/dita.xsl" type="text/xsl" ?&gt;</userinput></p>
+  <p>The <filepath>dita.xsl</filepath> file contains templates for processing both topics and maps.
+   In order to properly transform the DITA elements in a map, the stylesheet must use the
+    <apiname>xsl:document</apiname> function to pull in the content from the individual topicrefs,
+   then copy those nodes to the DOM or document tree. Since the stylesheet is transforming some
+   elements to their direct HTML equivalents, the transform needs to exclude those elements from
+   being directly copied over.</p>
+  <p>CSS styles can be applied by the browser to the individual elements. You can get as specific as
+   you would like for styling particular patterns of element structures.</p>
+ </conbody>
+</concept>

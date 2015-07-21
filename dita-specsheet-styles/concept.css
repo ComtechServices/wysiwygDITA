@@ -1,0 +1,29 @@
+/*
+====================================
+    Concept elements. [concept]
+====================================
+*/
+
+concept {
+    display:block;
+    page-break-inside: avoid;
+}
+
+conbody{
+    /* It inherits the styles from topic.css */
+    display:block;
+}
+
+concept > title {
+	font-size:1em;
+	font-weight:bold;
+	text-align:left;
+	color: #006db8;
+}
+
+conbody > section > title{
+	font-size:1em;
+	font-weight:bold;
+	text-align:left;
+	color: #006db8;
+}

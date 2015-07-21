@@ -1,0 +1,28 @@
+@import "dita.css";
+/*Useful when opening a map with resolved topics and then printing it to PDF with change tracking, 
+removes extra indents and static texts*/
+reference:before {
+  content: "" !important;  
+}
+reference{
+    margin:0px !important;
+    padding: 0px !important;
+}
+topicref{
+    margin-left:0em;
+    margin-top:0em;
+    margin-bottom:0em;
+}
+topicref:before{
+    display:inline;
+    content: "" !important;
+    background-color:inherit;
+}
+
+colspec {
+    display: none !important;    
+}
+
+tgroup:before {
+    display: none !important;    
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_j3z_s24_ts">
+ <title>Production example</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>For a real world example of dynamic browser-based rendering, you can point your mobile device,
+   tablet or computer browser to the <xref href="http://www.onvif.org/" format="html"
+    scope="external">http://www.onvif.org</xref> website. It takes a bit of navigating, but if you
+   pick a product from one of the Profile Products (Profile G is the newest), you will see a link to
+   the ONVIF Interface Guide. This guide is required by ONVIF for all manufacturers that want to
+   claim compliance to the standard. This guide must also conform to the DocBook standard. If you
+   view one of these guides, you will see the information presented directly in your browser in
+   human-readable form. If you have a way to “view source” on that document, however, you can see
+   that it is DocBook XML – transformed directly on your client device! This project uses the same
+   approach, but using DITA markup.</p>
+ </conbody>
+</concept>

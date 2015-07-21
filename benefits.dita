@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_sg3_n24_ts">
+ <title>Benefits</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>There are several benefits to a browser-based rendering approach. There is no additional
+   publishing workflow needed! Simply load the DITA or DocBook XML directly onto the web server
+   along with the stylesheets and then link to the document. It enables responsive design, so that
+   it is visible and properly scaled on any device, and takes advantages of the particular devices
+   using media queries. It also enables content re-use, since the content can be assembled from
+   individual content components. By removing the transformation/publishing workflow, files can be
+   updated on the server without delay. This approach is supported in all modern browsers, including
+   those on mobile devices.</p>
+ </conbody>
+</concept>

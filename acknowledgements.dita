@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_fsj_k24_ts">
+ <title>Acknowledgements</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>Developed by Scott Hudson.</p>
+  <p>Based on the work of:</p>
+  <ul id="ul_kv3_m24_ts">
+   <li>David Holroyd, Michael Thiele</li>
+   <li>wysiwygDocBook</li>
+   <li>oXygenXML CSS</li>
+  </ul>
+ </conbody>
+</concept>

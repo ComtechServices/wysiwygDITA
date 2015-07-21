@@ -1,0 +1,188 @@
+/*
+====================================
+    Task elements. [task]
+====================================
+*/
+task{
+    /* It inherits the styles from topic.css */
+    page-break-inside: avoid;
+}
+taskbody{
+    /* It inherits the styles from topic.css */
+    display:block;
+}
+task > title{
+    /* It inherits the styles from topic.css */
+    	font-size:1em;
+	font-weight:bold;
+	text-align:left;
+	color: #006db8;
+}
+
+prereq,
+postreq,
+context,
+result,
+/*
+    The information element (<info>) occurs 
+    inside a <step> element to provide additional 
+    information about the step.
+*/
+info,
+tutorialinfo,
+stepxmp,
+stepresult{
+    display:block;
+}
+/* EXM-18418 override "topic/section" class style */
+context{
+    margin-top: 0pt;
+}
+/* EXM-18418 override "topic/itemgroup" class style */
+info{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+prereq:before,
+postreq:before,
+context:before,
+result:before,
+info:before,
+tutorialinfo:before,
+stepxmp:before,
+stepresult:before{
+    display:block;
+    font-weight:bold;
+    color:#444444;
+    background-color:inherit;
+}
+
+
+prereq:before{
+    content: "Prerequisites: ";
+}
+postreq:before{
+    content: "Post-requisites: ";
+}
+context:before{
+    content: "Context: ";
+}
+result:before{
+    content: "Result: ";
+}
+info:before{
+    content: "Info: ";
+    /* EXM-18418 */
+    margin-top: 0.2em;
+}
+
+/*
+    The tutorial info (<tutorialinfo>) element 
+    contains information that is included in a 
+    step when a task is part of a tutorial. 
+*/
+tutorialinfo:before{
+    content: "Tutorial Info: "
+}
+
+/*
+    The step example (<stepxmp>) element is 
+    used to illustrate a step of a task. 
+*/
+stepxmp:before{
+    content: "Step Example: ";
+}
+
+stepresult:before{
+    content: "Step Result: ";
+}
+
+
+choices,
+substeps,
+steps-unordered,
+steps {
+    display:block;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/*
+    Using counters. the steps are ordered.
+*/
+steps {
+    counter-reset:step-count;
+}
+
+steps > step{
+    list-style:none;
+    margin-left:1em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+steps > step:before{
+    content: "Step " counter(step-count) ;
+    counter-increment:step-count;
+    background-color:inherit;
+    font-weight:bold;
+}
+
+cmd {
+    display:block;
+}
+
+/*
+    The steps-unordered element is just a list
+*/
+steps-unordered > step{
+    display:list-item;
+    list-style-type:disc;
+}
+
+
+/*
+    Now the substeps.
+*/
+
+substeps{
+    counter-reset:substep-count;
+    margin-left:2em; 
+}
+
+substep{
+    margin-top:0.5em;
+    margin-left:1em;
+}
+
+substeps > substep:before,
+step substeps > substep:before{
+    content:counter(substep-count, lower-alpha) ". Sub-step " ;
+    counter-increment:substep-count;
+    font-weight:bold;
+}
+
+/*
+    The choices.
+*/
+choice{
+    margin-left:1.2em;
+}
+choice:before{
+    font-size:small;
+    color:navy;
+    background-color:inherit;
+    text-align:center;
+}    
+
+choicetable{
+}
+choicetable choptionhd,
+choicetable chdeschd,
+choicetable choption,
+choicetable chdesc{
+}

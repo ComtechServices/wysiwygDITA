@@ -1,0 +1,9 @@
+
+/*
+ * 
+ * Page breaks
+ * 
+ */
+topic[is-chapter = "true"]{
+    page-break-before:always;
+}

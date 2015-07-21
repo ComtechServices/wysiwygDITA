@@ -1,0 +1,9 @@
+/*
+ * Llearning specialization elements which are not a figure.
+ */
+lcMultipleSelect > title:before,
+lcGapItem > title:before{
+    content: "";
+}
+
+

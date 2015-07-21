@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:dita-ng:dita:rng:map.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet href="dita-specsheet-styles/dita.xsl" type="text/xsl" ?>
+<map xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>wysiwygDITA: Rendering DITA in the browser.</title>
+ <topicgroup outputclass="intro">
+  <topicmeta><navtitle>Introduction</navtitle></topicmeta>
+  <topicref href="acknowledgements.dita">
+   <topicmeta><navtitle>Acknowledgements</navtitle></topicmeta>
+  </topicref>
+  <topicref href="benefits.dita">
+   <topicmeta><navtitle>Benefits</navtitle></topicmeta>
+  </topicref>
+  <topicref href="caveats.dita">
+   <topicmeta><navtitle>Caveats</navtitle></topicmeta>
+  </topicref>
+  <topicref href="example.dita">
+   <topicmeta><navtitle>Production Example</navtitle></topicmeta>
+  </topicref>
+  <topicref href="usage.dita">
+   <topicmeta><navtitle>Usage</navtitle></topicmeta>
+  </topicref>
+ </topicgroup>
+ <topicgroup outputclass="footer">
+  <topicmeta>
+   <foreign>
+    <org>
+<orgname>Comtech Services, Inc.</orgname>
+<address>
+ <street>710 Kipling Street, Suite 400</street> <city>Denver</city>, <state>CO</state> <postcode>80215</postcode>  <country>USA</country></address>
+     <phone>303-232-7586</phone>
+     <uri xlink:href="http://www.comtech-serv.com">http://www.comtech-serv.com</uri>
+    </org>
+    <legalnotice><para>Comtech Services, Inc., the Comtech Services, Inc. logo, and other trademarks associated with
+      Comtech Services, Inc. products referred to in this publication are trademarks of Comtech
+      Services, Inc., Inc. or its affiliates. All other product names and services are the property
+      of their respective companies.  ©Copyright 2015, Comtech Services, Inc., Inc. All rights
+      reserved.</para></legalnotice></foreign>
+  </topicmeta>
+ </topicgroup>
+</map>
