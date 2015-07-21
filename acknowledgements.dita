@@ -4,7 +4,8 @@
  <title>Acknowledgements</title>
  <shortdesc></shortdesc>
  <conbody>
-  <p>Developed by Scott Hudson.</p>
+  <p><xref href="https://github.com/ComtechServices/wysiwygDITA" format="html" scope="external"
+    >wysiwygDITA</xref> is developed by Scott Hudson.</p>
   <p>Based on the work of:</p>
   <ul id="ul_kv3_m24_ts">
    <li>David Holroyd, Michael Thiele</li>
