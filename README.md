@@ -1,5 +1,4 @@
-# wysiwygDITA
-Client-side rendering of DITA in the browser
+# wysiwygDITA: Rendering DITA in the Browser
 
 A presentation of this project was given at CIDM DITA North America 2015, and is included here.
 
